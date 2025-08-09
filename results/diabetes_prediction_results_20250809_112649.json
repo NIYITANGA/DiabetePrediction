@@ -1,0 +1,87 @@
+{
+  "timestamp": "20250809_112649",
+  "dataset_info": {
+    "shape": [
+      768,
+      9
+    ],
+    "features": [
+      "Pregnancies",
+      "Glucose",
+      "BloodPressure",
+      "SkinThickness",
+      "Insulin",
+      "BMI",
+      "Pedigree",
+      "Age"
+    ],
+    "target": "Class",
+    "diabetes_prevalence": "34.90%"
+  },
+  "preprocessing": {
+    "train_size": 614,
+    "test_size": 154,
+    "features_scaled": true
+  },
+  "model_results": {
+    "Random Forest": {
+      "best_params": {
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "min_samples_split": 2,
+        "n_estimators": 200
+      },
+      "accuracy": 0.7467532467532467,
+      "roc_auc": 0.8157407407407407,
+      "confusion_matrix": [
+        [
+          85,
+          15
+        ],
+        [
+          24,
+          30
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "best_params": {
+        "C": 1,
+        "penalty": "l2",
+        "solver": "liblinear"
+      },
+      "accuracy": 0.6948051948051948,
+      "roc_auc": 0.8127777777777777,
+      "confusion_matrix": [
+        [
+          80,
+          20
+        ],
+        [
+          27,
+          27
+        ]
+      ]
+    },
+    "Support Vector Machine": {
+      "best_params": {
+        "C": 0.1,
+        "gamma": "scale",
+        "kernel": "linear"
+      },
+      "accuracy": 0.7077922077922078,
+      "roc_auc": 0.8127777777777778,
+      "confusion_matrix": [
+        [
+          83,
+          17
+        ],
+        [
+          28,
+          26
+        ]
+      ]
+    }
+  },
+  "best_model": "Random Forest"
+}
