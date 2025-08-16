@@ -242,3 +242,6 @@ For questions or suggestions, please open an issue in the repository.
 ---
 
 **Note**: This model is for educational purposes and should not be used as a substitute for professional medical advice, diagnosis, or treatment.
+
+Space URL: [](https://huggingface.co/spaces/TNThom/diabetes-prediction-app)<https://huggingface.co/spaces/TNThom/diabetes-prediction-app>
+
